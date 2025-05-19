@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">FitBud</string>
+
+    <!-- Login -->
+    <string name="login_title">Login</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">Login</string>
+
+
+    <!-- Signup -->
+    <string name="signup_title">Create Account</string>
+    <string name="create_account_button">Create Account</string>
+
+    <!-- Main -->
+    <string name="main_title">Welcome to MoodFit</string>
+    <string name="start_workout">Start Workout</string>
+    <string name="settings">Settings</string>
+
+    <!-- Workout -->
+    <string name="workout_question">How are you feeling today?</string>
+    <string name="happy_mood">😊 Happy</string>
+    <string name="tired_mood">😴 Tired</string>
+    <string name="stressed_mood">😖 Stressed</string>
+    <string name="energetic_mood">💪 Energetic</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="dark_mode_toggle">Enable Dark Mode</string>
+</resources>

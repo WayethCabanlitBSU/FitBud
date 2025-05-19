@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/timerToolbar"
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        android:background="?attr/colorPrimary"
+        android:title="Workout Timer"
+        android:titleTextColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- Timer Text -->
+    <TextView
+        android:id="@+id/txtTimer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="30 sec"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorOnBackground"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/timerToolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="64dp" />
+
+    <!-- Start Button -->
+    <Button
+        android:id="@+id/btnStartTimer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:backgroundTint="?attr/colorPrimary"
+        android:textColor="?attr/colorOnPrimary"
+        app:layout_constraintTop_toBottomOf="@id/txtTimer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <!-- Stop Button -->
+    <Button
+        android:id="@+id/btnStopTimer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/btnStartTimer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
