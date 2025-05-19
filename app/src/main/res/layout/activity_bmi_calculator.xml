@@ -3,79 +3,91 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bmi"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="24dp">
 
-    <!-- 🔙 Toolbar -->
-
-    <!-- Height input -->
-
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/bmiToolbar"
-        android:layout_width="50dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="37dp"
+        android:layout_height="36dp"
         android:background="?attr/colorPrimary"
         android:title="BMI Calculator"
         android:titleTextColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/inputHeight"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
         android:hint="Height (cm)"
         android:inputType="numberDecimal"
         android:minHeight="48dp"
-        android:textColor="?attr/colorOnBackground"
-        android:textColorHint="?attr/colorOnBackground"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textColorLink="#292826"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/bmiToolbar" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.309" />
 
-    <!-- Weight input -->
-    <EditText
-        android:id="@+id/inputWeight"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:hint="Weight (kg)"
-        android:inputType="numberDecimal"
-        android:minHeight="48dp"
-        android:textColor="?attr/colorOnBackground"
-        android:textColorHint="?attr/colorOnBackground"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/inputHeight" />
-
-    <!-- Calculate Button -->
     <Button
         android:id="@+id/btnCalculateBMI"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="277dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="?attr/colorSecondary"
         android:text="Calculate BMI"
-        android:backgroundTint="?attr/colorPrimary"
         android:textColor="?attr/colorOnPrimary"
-        app:layout_constraintTop_toBottomOf="@id/inputWeight"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="24dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputWeight"
+        app:layout_constraintVertical_bias="0.002"
+        tools:ignore="TouchTargetSizeCheck" />
 
-    <!-- Result -->
     <TextView
         android:id="@+id/txtBMIResult"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Enter values to calculate"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        android:textAlignment="center"
         android:textColor="?attr/colorOnBackground"
-        app:layout_constraintTop_toBottomOf="@id/btnCalculateBMI"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="24dp"/>
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.81" />
+
+    <EditText
+        android:id="@+id/inputWeight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:hint="Weight (kg)"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        android:textColorLink="#FFC107"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputHeight" />
+
+    <!-- Calculate Button -->
+
+    <!-- Result -->
 </androidx.constraintlayout.widget.ConstraintLayout>

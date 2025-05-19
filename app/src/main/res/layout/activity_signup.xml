@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="24dp"
-    tools:layout_editor_absoluteX="0dp"
+    android:background="@drawable/signup"
     tools:layout_editor_absoluteY="24dp">
 
     <TextView
@@ -13,12 +13,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/signup_title"
+        android:textColor="#FDC40C"
+        android:textColorLink="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.302" />
+        app:layout_constraintVertical_bias="0.225" />
 
     <EditText
         android:id="@+id/editPasswordSignup"
@@ -34,7 +36,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editEmailSignup"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.034"
         tools:ignore="VisualLintTextFieldSize" />
 
     <Button
@@ -43,12 +45,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="@string/create_account_button"
+        android:textColor="#0F0F0F"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editPasswordSignup"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.034"
         tools:ignore="VisualLintButtonSize" />
 
     <EditText

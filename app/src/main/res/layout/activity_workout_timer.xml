@@ -2,60 +2,78 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/timer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="24dp">
 
     <!-- Toolbar -->
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/timerToolbar"
-        android:layout_width="50dp"
-        android:layout_height="46dp"
-        android:background="?attr/colorPrimary"
-        android:title="Workout Timer"
-        android:titleTextColor="@android:color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 
     <!-- Timer Text -->
+
+    <!-- Start Button -->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/timerToolbar"
+        android:layout_width="45dp"
+        android:layout_height="38dp"
+        android:background="?attr/colorPrimary"
+        android:title="Workout Timer"
+        android:titleTextColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
     <TextView
         android:id="@+id/txtTimer"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:text="30 sec"
+        android:textColor="#FFC107"
         android:textSize="36sp"
         android:textStyle="bold"
-        android:textColor="?attr/colorOnBackground"
-        android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@id/timerToolbar"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="64dp" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.483" />
 
-    <!-- Start Button -->
     <Button
         android:id="@+id/btnStartTimer"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="201dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="?attr/colorSecondary"
         android:text="Start"
-        android:backgroundTint="?attr/colorPrimary"
         android:textColor="?attr/colorOnPrimary"
-        app:layout_constraintTop_toBottomOf="@id/txtTimer"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="32dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.752"
+        tools:ignore="TouchTargetSizeCheck" />
 
-    <!-- Stop Button -->
     <Button
         android:id="@+id/btnStopTimer"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="201dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="?attr/colorSecondary"
         android:text="Stop"
-        android:backgroundTint="?attr/colorPrimary"
         android:textColor="@android:color/white"
-        app:layout_constraintTop_toBottomOf="@id/btnStartTimer"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnStartTimer"
+        app:layout_constraintVertical_bias="0.105"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <!-- Stop Button -->
 </androidx.constraintlayout.widget.ConstraintLayout>

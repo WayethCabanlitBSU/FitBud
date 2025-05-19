@@ -3,7 +3,7 @@
         <item name="colorPrimary">#FFC60C</item>
         <item name="colorPrimaryVariant">#00897B</item>
         <item name="colorOnPrimary">#FFFFFF</item>
-        <item name="colorSecondary">#000000</item>
+        <item name="colorSecondary">#292826</item>
         <item name="colorOnSecondary">#000000</item>
         <item name="android:windowBackground">#FFFFFF</item>
     </style>
